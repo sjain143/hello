@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('compile'){
+        stage('compiled'){
             
             steps{
                 echo "executed"
