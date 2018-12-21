@@ -13,7 +13,8 @@ pipeline{
         stage('testing') {
             
             steps{
-                echo "testing"
+                echo "emailing "
+                mail bcc: '', body: 'testing', cc: '', from: '', replyTo: '', subject: 'hello', to: 'manish_soni@optum.com'
             }
         }
         
