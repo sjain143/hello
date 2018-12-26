@@ -3,6 +3,10 @@ pipeline{
     stages{
         stage('compiled'){
             
+             steps {
+                withMaven(maven : 'maven_3_5_0') {
+                    sh 'mvn clean compile'
+                }
             steps{
                 echo "executed"
                 //input('do u wnat to proeceed')
