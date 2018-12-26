@@ -7,8 +7,8 @@ pipeline{
             steps{
                 echo "executed"
                 //input('do u wnat to proeceed')
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/msoni103/hello.git']]])
-               
+               // checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/msoni103/hello.git']]])
+               $ git branch
             }
         }   
         stage('testing') {
